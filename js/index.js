@@ -9,7 +9,7 @@ $(document).ready(function() {
 			var intTime = 120000;
 			var warnTime = intTime * 0.75;
 
-			$("#timerBox").removeClass("grey red").addClass("green");			
+			$("#timerBox").removeClass("grey red orange").addClass("green");			
 			
 			warnAlarm = function() {
 				console.log("Only 1/4 time left!")
@@ -34,7 +34,7 @@ $(document).ready(function() {
 			var intTime = 300000;
 			var warnTime = intTime * 0.75;
 
-			$("#timerBox").removeClass("grey red").addClass("green");			
+			$("#timerBox").removeClass("grey red orange").addClass("green");			
 			
 			warnAlarm = function() {
 				console.log("Only 1/4 time left!")
