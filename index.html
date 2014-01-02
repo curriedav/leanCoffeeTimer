@@ -1,13 +1,34 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8" />
-<title>leanCoffee Timer</title>
-<script src="/javascripts/index.js" type="text/javascript" charset="utf-8"></script>
-</head>
-<body>
-<div id="timerBox">
-</div>
-<button>Stop</button>
-</body>
+
+	<head>
+		<meta charset="UTF-8" />
+
+		<title>leanCoffee Timer</title>
+
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="/css/style.css">
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+		<script src="/js/index.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body class="container">
+		<div class="jumbotron panel-title">
+			<h1>leanCoffee Timer</h1>
+		</div>
+		
+		<div class="panel-body">
+			<div class="col-md-12 grey img-rounded" id="timerBox">
+			</div>
+			
+			<div class="btn-group">
+			  <button type="button" class="btn btn-default" id="fiveMin"><span class="glyphicon glyphicon-repeat"></span> 5 Min</button>
+			  <button type="button" class="btn btn-default" id="stop"><span class="glyphicon glyphicon-stop"></span></button>
+			  <button type="button" class="btn btn-default" id="twoMin"><span class="glyphicon glyphicon-repeat"></span> 2 Min</button>
+			</div>
+		</div>
+	</body>
 </html>
