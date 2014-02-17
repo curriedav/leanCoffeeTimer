@@ -5,7 +5,7 @@ $(document).ready(function() {
 		timerReset: function(milles) {
 			clearInterval(timer.timerMin);
 			var intTime = milles;
-			var warnTime = intTime * 0.75;
+			var warnTime = intTime * 0.9;
 
 			$("#timerBox").removeClass("grey red orange").addClass("green");			
 			
@@ -17,6 +17,7 @@ $(document).ready(function() {
 			timerAlarm = function() {
 				$("#timerBox").removeClass("orange").addClass("red");
 				clearInterval(timer.timerMin);
+				clearInterval(timer.warnMin);
 			};
 
 			this.timerMin = setInterval(timerAlarm, intTime);
