@@ -16,6 +16,7 @@ $(document).ready(function() {
 
 			timerAlarm = function() {
 				$("#timerBox").removeClass("orange").addClass("red");
+				window.navigator.vibrate(2000);
 				clearInterval(timer.timerMin);
 				clearInterval(timer.warnMin);
 			};
